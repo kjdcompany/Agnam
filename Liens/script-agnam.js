@@ -641,6 +641,7 @@ buttonNext.addEventListener("click", () => {
         div00Jpg.appendChild(img00Jpg);
         container.appendChild(div00Jpg);
     
+    }
     
     //Insertion du numero du chapitre suivant dans la barre du bas
     chapitreSuivant.value = (Number(chapitre) + 1);
