@@ -323,6 +323,48 @@ button.addEventListener("click", () => {
 
     }
     
+    //huitieme 'for' pour les images PNG en utilisant un 0 suplementaire les images
+
+    for (let i = 1; i <= 30; i++) {
+
+        //Creation des liens pour les images PNG du chapitre en utilisant un 0 suplementaire pour le chapitre et les images 
+
+        if (i < 10) {
+
+            //Pages chap +0 Image+0 avec fichiers PNG
+            lienDesPages00 = [lienDesScan[0], chapitre, lienDesScan[1], `00${i}`, lienDesScan[2]];
+            liensPages00[i] = lienDesPages00.join('');
+
+
+        } else {
+
+            //Pages chap +0 Image+0 avec fichiers PNG
+            lienDesPages00 = [lienDesScan[0], chapitre, lienDesScan[1], `0${i}`, lienDesScan[2]];
+            liensPages00[i] = lienDesPages00.join('');
+
+        }
+
+
+        //Creation et Insertion des images
+        let img00 = document.createElement("img");
+        img00.src = liensPages00[i];
+
+        //ajout de la classe none aux images non chargees
+        img00.onerror = function () {
+            return img00.className = "none";
+        };
+
+        //Creation d'un div pour contenir l'image
+        let div00 = document.createElement("div");
+        div00.className = "scan";
+
+
+        //Insertion de l'image dans le div
+        div00.appendChild(img00);
+        container.appendChild(div00);
+
+    }
+    
     //Insertion du numero du chapitre suivant dans la barre du bas
     chapitreSuivant.value = (Number(chapitre) + 1);
 
@@ -641,6 +683,48 @@ buttonNext.addEventListener("click", () => {
         div00Jpg.appendChild(img00Jpg);
         container.appendChild(div00Jpg);
     
+    }
+    
+    //huitieme 'for' pour les images PNG en utilisant un 0 suplementaire les images
+
+    for (let i = 1; i <= 30; i++) {
+
+        //Creation des liens pour les images PNG du chapitre en utilisant un 0 suplementaire pour le chapitre et les images 
+
+        if (i < 10) {
+
+            //Pages chap +0 Image+0 avec fichiers PNG
+            lienDesPages00 = [lienDesScan[0], chapitre, lienDesScan[1], `00${i}`, lienDesScan[2]];
+            liensPages00[i] = lienDesPages00.join('');
+
+
+        } else {
+
+            //Pages chap +0 Image+0 avec fichiers PNG
+            lienDesPages00 = [lienDesScan[0], chapitre, lienDesScan[1], `0${i}`, lienDesScan[2]];
+            liensPages00[i] = lienDesPages00.join('');
+
+        }
+
+
+        //Creation et Insertion des images
+        let img00 = document.createElement("img");
+        img00.src = liensPages00[i];
+
+        //ajout de la classe none aux images non chargees
+        img00.onerror = function () {
+            return img00.className = "none";
+        };
+
+        //Creation d'un div pour contenir l'image
+        let div00 = document.createElement("div");
+        div00.className = "scan";
+
+
+        //Insertion de l'image dans le div
+        div00.appendChild(img00);
+        container.appendChild(div00);
+
     }
     
     //Insertion du numero du chapitre suivant dans la barre du bas
