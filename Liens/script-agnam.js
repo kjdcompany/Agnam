@@ -1,4 +1,4 @@
-const lienDesScan = [document.getElementById('url').innerHTML, "/", ".png"];
+const lienDesScan = [document.getElementById('url').innerHTML, "/VF/", ".png"];
 
 //Creation des massifs contenant les liens des pages pour les differents format
 let liensPages = [];
@@ -422,8 +422,14 @@ buttonNext.addEventListener("click", () => {
         div.className = "scan";
 
         //Insertion de l'image dans le div
+//        img.onload = function () {
+//        div.appendChild(img);
+//        container.appendChild(div);
+//        }
+        
         div.appendChild(img);
         container.appendChild(div);
+        
     }
 
     //Deuxieme 'for' pour les images PNG en utilisant un 0 suplementaire pour le chapitre et les images
@@ -596,7 +602,7 @@ buttonNext.addEventListener("click", () => {
         container.appendChild(div00Jpg);
 
     }
-
+    
     //Sixieme 'for' pour les images JPG en utilisant un 000 suplementaire pour le chapitre et 0 les images
 
     for (let i = 1; i <= 30; i++) {
@@ -640,7 +646,7 @@ buttonNext.addEventListener("click", () => {
         container.appendChild(div00Jpg);
 
     }
-    
+
     //Septieme 'for' pour les images PNG en utilisant un 000 suplementaire pour le chapitre et 0 les images
 
     for (let i = 1; i <= 30; i++) {
@@ -682,7 +688,7 @@ buttonNext.addEventListener("click", () => {
         //Insertion de l'image dans le div
         div00Jpg.appendChild(img00Jpg);
         container.appendChild(div00Jpg);
-    
+
     }
     
     //huitieme 'for' pour les images PNG en utilisant un 0 suplementaire les images
