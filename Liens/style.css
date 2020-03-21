@@ -1,33 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
 
-.scan{
-    
+.scan {
+
     display: flex;
 }
 
 
-img{
+img {
     margin: auto;
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
 
-.btn-container input{
+.btn-container input {
     font-size: 1.5em;
     border-radius: 10px;
     text-align: center;
 }
 
-.btn-container button{
+.btn-container button {
     margin-left: 10px;
     padding: 10px 20px;
     background-color: green;
@@ -36,6 +39,6 @@ img{
     border-radius: 10px;
 }
 
-.none{
+.none {
     display: none;
 }
