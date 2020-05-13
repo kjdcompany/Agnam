@@ -21,7 +21,7 @@ button.addEventListener("click", () => {
     let chapitre = document.getElementById('chapitre').value;
 
     //Premier 'for' pour les images PNG 
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 0; i <= 30; i++) {
 
         //Creation des liens pour les images PNG
 
@@ -84,7 +84,7 @@ buttonNext.addEventListener("click", () => {
     let chapitre = document.getElementById('chapitreSuivant').value;
 
     //Premier 'for' pour les images PNG 
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 0; i <= 30; i++) {
 
         //Creation des liens pour les images PNG
 
